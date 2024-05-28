@@ -1,0 +1,89 @@
+.mainPageRelatorio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+    height: 100vh ;
+
+    background: linear-gradient(to bottom, #E6E2D3, #DAD6C7);
+    
+  }
+
+  .containerRelatorio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 400px;
+
+    margin-bottom: 40px;
+
+    height: 70%;
+    width: 85%;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(30px); 
+
+    
+    border-radius: 10px; 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    
+  }
+
+  .infoRelatorio{
+    width: 85%;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 40px;
+
+
+  }
+
+  .inputGroup label {
+    font-weight: bold; 
+    margin-bottom: 0.5rem; 
+  }
+
+  .inputGroup input {
+    padding: 0.5rem; /* Espaçamento interno */
+    width: 90%; /* Largura de 100% do container pai */
+    max-width: 400px; /* Largura máxima de 300px */
+    border: 1px solid #ddce96; /* Borda cinza */
+    border-radius: 4px; /* Bordas arredondadas */
+    outline: none; /* Remover contorno de foco */ 
+  }
+
+  .DownloadRelatorio{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .downloadButton {
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    background: #dbd4ba;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downloadButton:hover {
+    background: #bdb590;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    transition: background 0.5s ease; 
+    cursor: pointer;
+}
+
+

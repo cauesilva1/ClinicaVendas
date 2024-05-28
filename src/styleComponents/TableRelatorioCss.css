@@ -1,0 +1,30 @@
+.tableContainer {
+    width: 95%; /* Largura total do container */
+    height: 95%; /* Limite de altura para 90% da viewport */
+    overflow-y: auto; /* Adiciona rolagem vertical quando necessário */
+    border: 1px solid #cccccc34; /* Borda ao redor do container */
+  }
+  
+  .table {
+    width: 100%; /* Largura total do container */
+    border-collapse: collapse; /* Remove espaçamento entre células */
+  }
+
+  .table td{
+    padding: 12px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto ao centro */
+    border-bottom: 1px solid #cccccc4f; /* Linha de separação entre as linhas */
+  }
+  
+  .table th{
+    padding: 12px; /* Espaçamento interno */
+    text-align: left; /* Alinhamento do texto à esquerda */
+    border-bottom: 1px solid #cccccc4f; /* Linha de separação entre as linhas */
+    background-color: #f4f4f400; /* Cor de fundo para o cabeçalho */
+    font-weight: bold; /* Texto em negrito para o cabeçalho */
+  }
+  
+  .table tr:hover {
+    background-color: #f9f9f98c; /* Cor de fundo ao passar o mouse */
+  }
+  
