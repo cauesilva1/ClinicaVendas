@@ -1,0 +1,27 @@
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .paymentButtons {
+    display: flex;
+  }
+  
+  .formaPagamentoButton {
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    background: #E6E2D3;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .formaPagamentoButton.selected {
+    background: #d6c791;
+  }
+  

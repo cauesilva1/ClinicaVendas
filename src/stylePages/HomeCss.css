@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fullPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #E6E2D3, #DAD6C7);
+}
+
+.scheduleForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 80%;
+    width: 90%;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+  }
+
+  .inputGroup{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px; 
+  }
+
+  .inputs label {
+    font-weight: bold; 
+    margin-bottom: 0.5rem; 
+  }
+  
+
+  .inputs input {
+    padding: 0.5rem; /* Espaçamento interno */
+    width: 90%; /* Largura de 100% do container pai */
+    max-width: 400px; /* Largura máxima de 300px */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 4px; /* Bordas arredondadas */
+    outline: none; /* Remover contorno de foco */
+    transition: border-color 0.3s ease-in-out; /* Transição suave para a cor da borda */
+    
+  }
+  
+  
+  /* Estilos para os inputs quando em foco */
+  .inputs input:focus {
+    border-color: #ddce96; /* Mudança de cor da borda em foco */
+  }
+
+  .buscaCliente{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .divisor{
+    height: 1px;
+    width: 60%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.158);
+  }
+
+
+  .BuscarAgendamentoButton {
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    background: #E6E2D3;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.BuscarAgendamentoButton:hover {
+    background: #beb9a2;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    transition: background 0.5s ease; 
+    cursor: pointer;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .paymentButtons {
+    display: flex;
+  }
+  
+  .formaPagamentoButton {
+    margin-right: 0.5rem;
+  }
+
+  .ConfirmarVendaButton {
+    margin-top: 60px;
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    background: #E6E2D3;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ConfirmarVendaButton:hover {
+    background: #beb9a2;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    transition: background 0.5s ease; 
+    cursor: pointer;
+}
+  
+  
+  
