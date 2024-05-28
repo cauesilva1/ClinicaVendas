@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+# Sistema de Vendas de Clínica
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto consiste em um sistema de vendas para uma clínica, onde serão realizadas diversas operações, como busca de informações do cliente no banco de dados, tratamento de dados, processamento de pagamentos, geração de notas fiscais e relatórios gerais. O sistema será desenvolvido utilizando TypeScript, React, Node.js, Prisma, Supabase e outras tecnologias que serão analisadas para uma construção mais eficiente do projeto.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- Busca de informações do cliente no banco de dados.
+- Tratamento de dados do cliente.
+- Processamento de pagamentos.
+- Geração de notas fiscais.
+- Geração de relatórios gerais.
+- Download de relatórios para Excel.
+- Filtragem de relatórios por CPF do cliente (apenas para visualização).
+
+## Tecnologias Utilizadas
+
+- **TypeScript**: Linguagem de programação.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Node.js**: Ambiente de execução JavaScript assíncrono orientado a eventos.
+- **Prisma**: Ferramenta ORM para bancos de dados SQL.
+- **Supabase**: Plataforma que oferece banco de dados e autenticação em tempo real.
+- *Outras tecnologias a serem analisadas durante o desenvolvimento*.
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar os seguintes scripts:
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Executa o aplicativo no modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+A página será recarregada se você fizer edições.\
+Você também verá os erros de lint no console.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia o executor de testes no modo de observação interativa.\
+Consulte a seção sobre [execução de testes](https://facebook.github.io/create-react-app/docs/running-tests) para obter mais informações.
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Compila o aplicativo para produção na pasta `build`.\
+Ele agrupa corretamente o React no modo de produção e otimiza a compilação para obter o melhor desempenho.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O build é minificado e os nomes dos arquivos incluem os hashes.\
+Seu aplicativo está pronto para ser implantado!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Consulte a seção sobre [implantação](https://facebook.github.io/create-react-app/docs/deployment) para obter mais informações.
 
-### `yarn eject`
+## Saiba Mais
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Você pode aprender mais na [documentação do Create React App](https://facebook.github.io/create-react-app/docs/getting-started).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para aprender React, consulte a [documentação do React](https://reactjs.org/).
