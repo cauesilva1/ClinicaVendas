@@ -1,6 +1,7 @@
 import React from "react";
 import "../stylePages/HomeCss.css";
 import FormaDePagamento from "../components/FormaDePagamento";
+import { Link } from "react-router-dom";
 
 const Home: React.FC = () => {
   return (
@@ -142,13 +143,18 @@ const Home: React.FC = () => {
             </div>
 
 
-          </div>
+          </div> 
 
-          <button className="ConfirmarVendaButton">
+          <Link to={"/Relatorio"} className="ConfirmarVendaButton">
               Confirmar Venda
-            </button>
+          </Link>
 
         </div>
+
+        <Link className="downloadButton" to={"/"}>
+          Voltar
+        </Link>
+        
       </div>
       ;
     </>

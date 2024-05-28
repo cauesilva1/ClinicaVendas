@@ -56,13 +56,10 @@
     cursor: pointer;
 }
 
-  
-
-/* :root {
-    --cor1: #E6E2D3;
-    --cor2: #DAD6C7; 
-    --cor3: #B7B1A8;
-    --cor4: #8E8A7A;
-    --cor5: #666354;
-  } */
-  
+.buttons{
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     background: linear-gradient(to bottom, #E6E2D3, #DAD6C7);
@@ -18,6 +19,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 40px;
 
     height: 80%;
     width: 90%;
@@ -135,6 +137,26 @@
     border: 1px solid rgba(0, 0, 0, 0.418);
     transition: background 0.5s ease; 
     cursor: pointer;
+}
+
+.downloadButton {
+  width: 160px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.418);
+  background: #dbd4ba;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.downloadButton:hover {
+  background: #bdb590;
+  border: 1px solid rgba(0, 0, 0, 0.418);
+  transition: background 0.5s ease; 
+  cursor: pointer;
 }
   
   
