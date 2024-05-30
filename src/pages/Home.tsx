@@ -12,6 +12,8 @@ const Home: React.FC = () => {
 
           <div className="buscaCliente">
 
+            <h2>Busca de cliente</h2>
+
             <div className="inputs">
               <div className="inputGroup">
                 <label htmlFor="name">Nome:</label>

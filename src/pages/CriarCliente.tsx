@@ -12,6 +12,8 @@ const CriarCliente: React.FC = () => {
         <div className="CriarClienteCointainer">
 
           <div className="criarCliente">
+            
+          <h2>Criar de cliente</h2>
 
             <div className="inputs">
               <div className="inputGroup">
