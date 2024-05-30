@@ -15,6 +15,7 @@ const WaitScrean: React.FC = () => {
             <Link className="buttonWait" to={"/Home"}>Agendar Agora</Link>
             <Link className="buttonWait" to={"/Relatorio"}>Ver relatorios</Link>
             <Link className="buttonWait" to={"/CriarCliente"}>Adicionar Cliente</Link>
+            <Link className="buttonWait" to={"/CriarAgenda"}>Criar Agenda</Link>
           </div>
         </div>
       </div>
