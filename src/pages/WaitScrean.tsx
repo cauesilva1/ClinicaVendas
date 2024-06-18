@@ -12,7 +12,7 @@ const WaitScrean: React.FC = () => {
             <h1>Bem-vindo ao Sistema de Vendas</h1>
 
           <div className="buttons">
-            <Link className="buttonWait" to={"/Home"}>Agendar Agora</Link>
+            <Link className="buttonWait" to={"/Home"}>Vender Agora</Link>
             <Link className="buttonWait" to={"/Relatorio"}>Ver relatorios</Link>
             <Link className="buttonWait" to={"/CriarCliente"}>Adicionar Cliente</Link>
             <Link className="buttonWait" to={"/CriarAgenda"}>Criar Agenda</Link>

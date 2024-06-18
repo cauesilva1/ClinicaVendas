@@ -1,4 +1,5 @@
 import React from "react";
+import { format } from "date-fns";
 import "../styleComponents/TableRelatorioCss.css";
 
 interface Pagamento {
@@ -17,10 +18,10 @@ interface TableComponentProps {
 
 const TableComponent: React.FC<TableComponentProps> = ({ data }) => {
 
-  // const formatarHorario = (horario: string) => {
-  //   const dataFormatada = new Date(horario);
-  //   return format(dataFormatada, "dd/MM/yyyy HH:mm");
-  // };
+  const formatarHorario = (horario: string) => {
+    const dataFormatada = new Date(horario);
+    return format(dataFormatada, "dd/MM/yyyy HH:mm");
+  };
 
 
   return (
@@ -46,8 +47,8 @@ const TableComponent: React.FC<TableComponentProps> = ({ data }) => {
                 <td>{item.formaPagamento}</td>
                 <td>{item.procedimento}</td>
                 <td>{item.profissional}</td>
-                <td>{item.horarioAgendado}</td>
-                <td>{item.dataHoraPagamento}</td>
+                <td>{formatarHorario(item.horarioAgendado)}</td>
+                <td>{formatarHorario(item.dataHoraPagamento)}</td>
               </tr>
             ))
           ) : (

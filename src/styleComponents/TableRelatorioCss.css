@@ -15,12 +15,12 @@
 .table th,
 .table td {
   padding: 12px; /* Espaçamento interno */
-  /* text-align: center;  */
+  text-align: center; 
   border: 1px solid #ccc; /* Linha de separação entre as linhas */
 }
 
 .table th {
-  text-align: left; /* Alinhamento do texto à esquerda para cabeçalhos */
+  text-align: center; /* Alinhamento do texto à esquerda para cabeçalhos */
   background-color: #f4f4f4; /* Cor de fundo para o cabeçalho */
   font-weight: bold; /* Texto em negrito para o cabeçalho */
 }

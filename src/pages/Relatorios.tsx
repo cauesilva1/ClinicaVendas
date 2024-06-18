@@ -41,17 +41,17 @@ const Relatorio: React.FC = () => {
 
 
         <div className="infoRelatorio">
-          <div className="inputGroup">
+          {/* <div className="inputGroup">
             <label htmlFor="cpfFilter">Filtrar por CPF:</label>
             <input id="cpfFilter" type="text" placeholder="Digite o CPF..." />
-          </div>
-          <div className="DownloadRelatorio">
+          </div> */}
+          {/* <div className="DownloadRelatorio">
             <div className="inputGroup">
               <label htmlFor="reportDate">Data do Relatório:</label>
               <input id="reportDate" type="date" />
             </div>
             <button className="downloadButton">Baixar Relatório</button>
-          </div>
+          </div> */}
         </div>
 
         <div className="containerRelatorio">
