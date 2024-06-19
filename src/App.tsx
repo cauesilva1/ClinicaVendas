@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import WaitScrean from './pages/WaitScrean';
 import Relatorio from './pages/Relatorios';
 import CriarCliente from './pages/CriarCliente';
-import CriarAgenda from './pages/CriarAgenda';
+
 
 
 
@@ -16,8 +16,6 @@ const App: React.FC = () => {
         <Route path="/Relatorio" element={<Relatorio />} />
         <Route path="/" element={<WaitScrean />} />
         <Route path="/CriarCliente" element={<CriarCliente />} />
-        <Route path='CriarAgenda' element={<CriarAgenda />} />
-
       </Routes>
     </Router>
   );
