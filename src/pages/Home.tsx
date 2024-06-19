@@ -4,6 +4,9 @@ import FormaDePagamento from "../components/FormaDePagamento";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
+import VendaPdf from "../components/VendasPdf";
+import { PDFDownloadLink, pdf } from "@react-pdf/renderer";
+
 
 const Home: React.FC = () => {
   const [nome, setNome] = useState("");
@@ -19,6 +22,7 @@ const Home: React.FC = () => {
   const [data, setData] = useState("");
   const [formaPagamento, setFormaPagamento] = useState<string | null>(null); // Estado para armazenar a forma de pagamento selecionada
   const [idAgendamento, setIdAgendamento] = useState<number | null>(null); // Estado para armazenar o ID de agendamento
+  const [venda, setVenda] = useState<any | null>(null); // Estado para armazenar os dados da venda
 
   const navigate = useNavigate();
 
@@ -73,9 +77,39 @@ const Home: React.FC = () => {
 
       const responseVenda = await axios.post("http://localhost:5140/api/pagamento", vendaData);
       console.log("Resposta da venda:", responseVenda.data);
-      navigate('/Relatorio');
+
+      const venda = {
+        nome,
+        telefone,
+        cpf,
+        rua,
+        bairro,
+        complemento,
+        procedimento,
+        profissional,
+        valor,
+        horario,
+        data,
+        formaPagamento
+      };
+
+      setVenda(venda);
+
+      // Gerar o PDF
+      const doc = pdf(<VendaPdf venda={venda} />);
+      const blob = await doc.toBlob();
+
+      // Criar link para download
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'venda.pdf';
+      link.click();
+
 
       alert("Venda realizada com sucesso!");
+
+      navigate('/Relatorio');
+
 
     } catch (error) {
       console.error("Erro ao realizar venda:", error);
